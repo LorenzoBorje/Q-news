@@ -1,0 +1,33 @@
+.masthead {
+  width: 1024px;
+  height: 120px;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: red;
+}
+
+.masthead > * {
+  color: #FFFFFF;
+  float: left;
+  font-weight: 600;
+}
+
+.masthead-logo {
+  font-size: 100px;
+  display: inline;
+}
+
+.masthead-info {
+  position: relative;
+  top: 35px;
+  display: inline;
+  margin-left: 20px;
+}
+
+.masthead-motto {
+  font-style: italic;
+}
+
+.masthead-spotify {
+  margin-top: 10px;
+}
