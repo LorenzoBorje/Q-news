@@ -1,14 +1,47 @@
 import React from 'react';
+import './stories.css';
 
-export default function Stories(props) {
-  return (
-    <div className="story-container">
-      <article className="story-headline">Bombers, fighters in Beijing’s “Happy New Year” video to Taipei</article>
-      <article className="story-headline">Bomb kills 20 in Mindanao, the south of the Philippines</article>
-      <article className="story-headline">US study finds correlation between gun ownership, youth suicide</article>
-      <article className="story-headline selected">Chicago Architecture Biennial to reveal curatorial statement</article>
-      <article className="story-headline">Facebook to merge Instagram, Messenger, Whatsapp</article>
-      <article className="story-headline">Apple in 2018, the Sixcolors report card</article>
-    </div>
-  );
+
+export default class Stories extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      stories: props.stories
+    }
+  }
+  
+  onClick(link) {
+    console.log(link);
+    const win = window.open(link, '_blank');
+    win.focus();
+
+  }
+
+  render() {
+    const stories = this.state.stories.map((story, index) => {
+  
+      return (  
+        <a className="story-link" href={story.link} target="_blank">
+          <article href={story.link} className="story-headline">
+            {story.title}
+            <span className="story-headline-arrow"> ↵ </span>
+            <div className="story-summary">
+              {story.summary}
+              <div className="story-source">
+                from {story.source}
+              </div>
+            </div>
+          </article>
+
+        </a>
+      )
+    });
+    
+    return (
+      <div className="story-container">
+        {stories}
+      </div>
+    );
+  }
+
 }

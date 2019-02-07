@@ -28,3 +28,8 @@ Be able to fetch RSS updates.
 Be able to select which RSS feeds to follow.
 
 Animations?
+
+
+Bibliography
+
+[Using Spotify's API with React](https://medium.com/@jonnykalambay/now-playing-using-spotifys-awesome-api-with-react-7db8173a7b13)

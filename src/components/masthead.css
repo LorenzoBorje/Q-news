@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .masthead {
   width: 1024px;
   height: 120px;
@@ -8,12 +12,28 @@
 .masthead > * {
   color: #FFFFFF;
   float: left;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+/* .masthead-date, .masthead-tagline, .masthead-spotify {
+  background-color: #FFF;
+  display: block;
+  color: #000;
+} */
+
+.masthead-date, .masthead-tagline {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding: 5px;
+  display: table;
 }
 
 .masthead-logo {
   font-size: 100px;
   display: inline;
+  font-weight: 800;
 }
 
 .masthead-info {

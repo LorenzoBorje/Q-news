@@ -1,0 +1,58 @@
+.story-link {
+  text-decoration: none;
+  display: block;
+  color: #FFF;
+}
+
+.story-container {
+  color: #FFF;
+  width: 800px;
+  height: 55vh;
+  margin: 50px;
+  margin-left: 122px;
+  font-weight: 700;
+}
+
+.story-link > article {
+  margin-bottom: 30px;
+  padding: 10px;
+  transition: all 0.5s ease-out;
+}
+
+
+.story-link > article:hover, .story-link:focus > article{
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px;
+}
+
+.story-link:focus > article:hover {
+  background-color: none;
+}
+
+article.story-headline > * {
+  visibility: hidden;
+  display: none;
+}
+
+article.story-headline:hover > *, article.story-headline:hover > * > *,
+.story-link:focus > *, .story-link:focus > article > * {
+  visibility: visible;
+}
+
+article:hover > .story-headline-arrow, .story-link:focus > article > .story-headline-arrow {
+  display: inline;
+}
+
+article:hover > .story-summary, .story-link:focus > article > .story-summary {
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 400;
+}
+
+.story-source {
+  margin-top: 10px;
+  font-weight: 800;
+  font-size: 12px;
+}
