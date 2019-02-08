@@ -1,4 +1,5 @@
 import React from 'react';
+import Spotify from './spotify';
 
 import './masthead.css';
 
@@ -12,9 +13,10 @@ export default function Masthead(props) {
           <span className="masthead-holiday">First day of the Lunar New Year </span>
           <span className="masthead-motto">// It's already tomorrow in Hong Kong</span>
         </div>
-        <div className="masthead-spotify">
+        <Spotify />
+        {/* <div className="masthead-spotify">
           <span className="masthead-spotify-track">King of the Hill — Thundercat, BADBADNOTGOOD, Flying Lotus</span>
-        </div>
+        </div> */}
       </div>
 
     </header>

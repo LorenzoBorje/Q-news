@@ -51,14 +51,21 @@ export default class App extends Component {
         source: 'Six Colors'
 
       }]
-    }
+    };
+
+    this.playerCheckInterval = null;
+
   }
 
+
+  
+
+
   render() {
+
     return (
       <div className="App">
         <Masthead />
-        
         <Main stories={this.state.stories}/>
         {/* <Footer /> */}
       </div>
