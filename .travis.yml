@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: k2/2HB0wqV+ooRH/XKXbp9+RZ9Ln8HCjTHkGk2UlKaKjagyXEGPGAJQy4Esk2B3hvulwVtpwHssrjWMcf0I+eYvMZ1G9Vy5CvS7OfUAFaZhYxcTYfHCpCaXItrkHQ0U6aQ5WkMN5nF4OSUr2ajk33d3FfOsIKV1vikhaEvbdUSttv0TsJVMksaECopCiobGzRjTj5/rH2DdRbvmW5qw6GEcswQ1U7alsmKWg7Fz3kWuIppLqxfhC11PJ5SbeYCzAPHt4WE4tYFV2cVboXmSGc4fk/C/MmpXmvrObuSrbAQQ0cJaC67aigMb6/NVj9eLNofek2yxP+jfxAeKjXFgj5zFCoClFuu/YWHySJTP1G45nj3Oo6WXoYHyw807DrLFFsa+Nr4r55daPaDh1NvgB9oxtsFi8Et10KlICPja6twU6w/uPF9GZCNt+yXi17BdqVNksPixdL0K4qwA/+B6V7KG9+WVvOu3K99I+BSRyfP9rxGTfPEksfjTMft4vSHI4T3g5sVY1sntupGoG1EisdJBmH/51wzLwS3t5omZ3SXOi5Mf3MpKHEka7cQ43HAb1qGXSl98fY6+0ZrqUrs+PlRcAdCLMR2SCHUN3++UjKC1GIluMQQ6txsuiuduABbnMC+YGtNKW40yqtHVBfQsaeIOTKGL0N1ozFk/JKsRijsM=
+  app: sleepy-beyond-83631
+  on:
+    repo: LorenzoBorje/Q-news
