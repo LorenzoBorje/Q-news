@@ -9,16 +9,7 @@ export default class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      token: "",
-      deviceId: "",
-      loggedIn: false,
-      error: "",
-      trackName: "Track Name",
-      artistName: "Artist Name",
-      albumName: "Album Name",
-      playing: false,
-      position: 0,
-      duration: 0,
+      date: new Date(),
       stories: [{
         title: 'Bombers, fighters in Beijing’s “Happy New Year” video to Taipei',
         link: 'https://beta.scmp.com/news/china/military/article/2185054/pla-bombers-jet-fighters-star-beijings-happy-lunar-new-year',
@@ -63,9 +54,22 @@ export default class App extends Component {
 
   render() {
 
+    const {
+      token,
+      loggedIn,
+      artistName,
+      trackName,
+      albumName,
+      error,
+      position,
+      duration,
+      playing,
+    } = this.state;
+  
+
     return (
       <div className="App">
-        <Masthead />
+        <Masthead date={this.state.date.toLocaleDateString()} />
         <Main stories={this.state.stories}/>
         {/* <Footer /> */}
       </div>

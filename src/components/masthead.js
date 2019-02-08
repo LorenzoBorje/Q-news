@@ -8,7 +8,7 @@ export default function Masthead(props) {
     <header className="masthead">
       <div className="masthead-logo">Q!</div>
       <div className="masthead-info">
-        <div className="masthead-date">5 February 2019</div>
+        <div className="masthead-date">8 February 2019</div>
         <div className="masthead-tagline">
           <span className="masthead-holiday">First day of the Lunar New Year </span>
           <span className="masthead-motto">// It's already tomorrow in Hong Kong</span>
